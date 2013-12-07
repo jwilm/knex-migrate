@@ -1,0 +1,22 @@
+{
+  "name": "knex-migrate",
+  "version": "0.0.1",
+  "description": "A migration generator for the knex query builder",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --compilers coffee:coffee-script --reporter spec"
+  },
+  "keywords": [
+    "knex",
+    "bookshelf",
+    "generator"
+  ],
+  "author": "Joe Wilm <jdwilm@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "knex": "0.5.*"
+  },
+  "devDependencies": {
+    "mocha": "1.15.*"
+  }
+}
