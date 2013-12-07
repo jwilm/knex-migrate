@@ -5,7 +5,7 @@ A migration generator for the knex query builder.
 
 ## Features
 
-The knex generator interface is inspired from the rails migration generator, and if you are familiar with the latter, you should be immediately comfortable with this generator for knex. Migration files are output using CoffeScript.
+The knex generator interface is inspired from the rails migration generator, and if you are familiar with the latter, you should be immediately comfortable with this generator for knex. Migration files are output using CoffeeScript.
 
 ## Syntax
 
@@ -23,6 +23,11 @@ The knex generator interface is inspired from the rails migration generator, and
     - add xxx ref to yyy table
 - `CreateJoinTableXXXYYY`
     - Create a join table for the tables XXX and YYY
+
+There are some utilities for running the migrations:
+- `knex-migrate up`: run pending migrations
+- `knex-migrate rollback`: rollback last migration
+- `knex-migrate status`: show pending migrations
 
 ## Examples
 
