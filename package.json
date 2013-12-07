@@ -2,9 +2,10 @@
   "name": "knex-migrate",
   "version": "0.0.1",
   "description": "A migration generator for the knex query builder",
+  "repository": "https://github.com/jwilm/knex-migrate.git",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --compilers coffee:coffee-script --reporter spec"
+    "test": "mocha --recursive --compilers coffee:coffee-script -R spec spec/"
   },
   "keywords": [
     "knex",
@@ -17,6 +18,7 @@
     "knex": "0.5.*"
   },
   "devDependencies": {
-    "mocha": "1.15.*"
+    "mocha": "1.15.*",
+    "coffee-script": "1.6.x"
   }
 }
