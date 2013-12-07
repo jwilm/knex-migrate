@@ -48,4 +48,3 @@ module.exports =
     knex.schema.dropTable 'user'
 ```
 
-
