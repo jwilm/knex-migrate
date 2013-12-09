@@ -3,4 +3,8 @@
 Parser = require '../src/cli/parser'
 KnexMigrate = require '../src/knex_migrate'
 
-parser  = new Parser process.argv
+try
+  parser  = new Parser process.argv
+catch
+  console.log Parser.help()
+  return

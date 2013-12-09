@@ -22,3 +22,14 @@ describe 'CLI Parser', ->
     it 'should return the task to perform', ->
       parser = new Parser ['coffee', 'script', 'generate', 'table']
       assert.equal parser.task(), 'generate'
+
+  describe '#options', ->
+    it 'should return the remaining options following the task', ->
+      args = ['coffee', 'script', 'generate', 'CreateUserTable',
+              'name:string:index', 'email:string']
+      parser = new Parser args
+      assert.deepEqual parser.options(), args.slice(3, args.length)
+
+  describe '#help', ->
+    it 'should return a help string', ->
+      assert.ok /usage/i.test Parser.help()
