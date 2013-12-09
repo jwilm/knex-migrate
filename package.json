@@ -5,6 +5,7 @@
   "repository": "https://github.com/jwilm/knex-migrate.git",
   "main": "index.js",
   "scripts": {
+    "build": "coffee -c -o lib/ src/",
     "test": "mocha --recursive --compilers coffee:coffee-script -R spec spec/"
   },
   "keywords": [

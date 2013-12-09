@@ -1,0 +1,6 @@
+#!/usr/bin/env coffee
+
+Parser = require '../src/cli/parser'
+KnexMigrate = require '../src/knex_migrate'
+
+parser  = new Parser process.argv
