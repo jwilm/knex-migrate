@@ -3,6 +3,8 @@ knex-migrate
 
 A migration generator for the knex query builder. 
 
+This is a WIP - no workable code yet.
+
 ## Features
 
 The knex generator interface is inspired from the rails migration generator, and if you are familiar with the latter, you should be immediately comfortable with this generator for knex. Migration files are output using CoffeeScript.
